@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Leão</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #dddddd;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 32px 16px;
+        }
+
+        .topo {
+            width: 100%;
+            max-width: 960px;
+            height: 150px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 8px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .logo {
+            width: 120px;
+            height: 110px;
+            object-fit: cover;
+            background-color: #ffffff;
+            padding: 4px;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 22px;
+            padding-top: 4px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #b65f4b;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 700px) {
+            .topo {
+                height: auto;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+                padding-bottom: 16px;
+            }
+
+            .menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="topo">
+        <img class="logo" src="leao-vetor-logo-leao-leao-de-duas-cores_776251-8.icon.avif" alt="Logo leao vetor">
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Lar</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Fotos</a></li>
+                <li><a href="#">Saiba Mais</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

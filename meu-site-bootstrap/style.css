@@ -1,0 +1,30 @@
+.hero {
+    height: 100vh;
+    background-image: url("https://picsum.photos/seed/travelhero/1600/900");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero .lead {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.destino-img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+}

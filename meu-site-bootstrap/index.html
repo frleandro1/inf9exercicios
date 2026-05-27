@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota Livre Viagens</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-semibold" href="#">Rota Livre</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Alternar navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio" aria-current="page">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pacotes">Pacotes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero d-flex align-items-center text-center text-white">
+            <div class="container">
+                <h1 class="display-3 fw-bold">Viaje mais, gaste menos</h1>
+                <p class="lead">Descubra destinos incriveis com roteiros planejados para voce.</p>
+                <a href="#galeria" class="btn btn-light btn-lg mt-3">Ver destinos</a>
+            </div>
+        </section>
+
+        <section id="galeria" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Destinos em destaque</h2>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <img src="https://picsum.photos/seed/paris/300/300" alt="Paris" class="img-fluid rounded shadow destino-img">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <img src="https://picsum.photos/seed/roma/300/300" alt="Roma" class="img-fluid rounded shadow destino-img">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <img src="https://picsum.photos/seed/tokyo/300/300" alt="Toquio" class="img-fluid rounded shadow destino-img">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <img src="https://picsum.photos/seed/rio/300/300" alt="Rio de Janeiro" class="img-fluid rounded shadow destino-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pacotes" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Pacotes recomendados</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card shadow h-100">
+                            <img src="https://picsum.photos/seed/praia/600/400" alt="Pacote praia" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Escapada Tropical - 5 dias</h3>
+                                <p class="card-text">Hospedagem, cafe da manha e passeios nas praias mais bonitas da regiao.</p>
+                                <a href="#contato" class="btn btn-dark">Solicitar cotacao</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card shadow h-100">
+                            <img src="https://picsum.photos/seed/montanha/600/400" alt="Pacote montanha" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Aventura na Serra - 7 dias</h3>
+                                <p class="card-text">Roteiro com trilhas, mirantes e experiencias gastronomicas em clima de montanha.</p>
+                                <a href="#contato" class="btn btn-dark">Solicitar cotacao</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="bg-dark text-white text-center p-4">
+        <p class="mb-0">Rota Livre Viagens - Contato: (51) 984538610 - 2026</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

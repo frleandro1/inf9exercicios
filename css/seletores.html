@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        div {
+            display: inline-block;
+            border: 10px solid black;
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+        }
+
+        .vermelho { background-color: #ff6b6b; }
+        .azul { background-color: #4ecdc4; }
+        .amarelo { background-color: #ffe66d; }
+        .verde { background-color: #95e1d3; }
+        .laranja { background-color: #ffa502; }
+        .roxo { background-color: #c7b3e5; }
+        .rosa { background-color: #ff69b4; }
+        .ciano { background-color: #00bcd4; }
+        .marrom { background-color: #a1684a; }
+
+        #canto-sup-esq { border: 10px solid #333; }
+        #canto-sup-dir { border: 10px solid #333; }
+        #canto-inf-esq { border: 10px solid #333; }
+        #canto-inf-dir { border: 10px solid #333; }
+    </style>
+</head>
+<body>
+    <div id="canto-sup-esq" class="vermelho"></div>
+    <div class="azul"></div>
+    <div id="canto-sup-dir" class="amarelo"></div>
+    <br>
+    <div class="verde"></div>
+    <div class="laranja"></div>
+    <div class="roxo"></div>
+    <br>
+    <div id="canto-inf-esq" class="rosa"></div>
+    <div class="ciano"></div>
+    <div id="canto-inf-dir" class="marrom"></div>
+</body>
+</html>

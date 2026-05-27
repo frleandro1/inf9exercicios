@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.tabela-periodica {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+}
+
+.tabela-periodica td {
+  width: 60px;
+  height: 80px;
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+  position: relative;
+}
+
+.elemento {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.numero {
+  font-size: 0.8em;
+  color: #666;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.simbolo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nome {
+  font-size: 0.8em;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Estilos específicos para os elementos */
+.h {
+  background-color: #ffcccb;
+}
+.he {
+  background-color: #add8e6;
+}
+.li {
+  background-color: #90ee90;
+}
+.be {
+  background-color: #ffd700;
+}
+.b {
+  background-color: #ffa500;
+}
+.c {
+  background-color: #d3d3d3;
+}
+.n {
+  background-color: #98fb98;
+}
+.o {
+  background-color: #ff6347;
+}
+.f {
+  background-color: #afeeee;
+}
+.ne {
+  background-color: #dda0dd;
+}

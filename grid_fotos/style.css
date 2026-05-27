@@ -1,0 +1,27 @@
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: clamp(8px, 2vw, 14px);
+    padding: clamp(12px, 3vw, 20px);
+}
+
+.photo-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.photo-grid img.featured {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+@media (max-width: 600px) {
+    .photo-grid img.featured {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}

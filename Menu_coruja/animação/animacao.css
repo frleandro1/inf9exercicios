@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	display: grid;
+	place-items: center;
+	background: #e0b7db;
+	padding: 8px;
+}
+
+.cena {
+	width: min(100%, 700px);
+	min-height: 100vh;
+	padding: 10px 18px 20px;
+	background: #dca9d2;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	justify-items: center;
+	align-content: stretch;
+	gap: 16px;
+}
+
+.titulo {
+	margin: 0;
+	color: #8a0a7a;
+	font-size: clamp(2.4rem, 6vw, 3.7rem);
+	font-weight: 700;
+	line-height: 0.95;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.18);
+	padding-top: 4px;
+}
+
+.palco {
+	position: relative;
+	width: min(100%, 460px);
+	height: clamp(340px, 58vh, 580px);
+	display: grid;
+	place-items: center;
+}
+
+.coracao {
+	position: relative;
+	z-index: 2;
+	width: min(80vw, 340px);
+	height: min(80vw, 340px);
+	background: linear-gradient(145deg, #f78ec3 0%, #f06bb5 45%, #e75fa7 100%);
+	box-shadow:
+		inset -18px -16px 26px rgba(140, 28, 89, 0.16),
+		inset 16px 16px 28px rgba(255, 255, 255, 0.24),
+		0 2px 0 rgba(125, 76, 103, 0.55);
+	animation: pulseHeart 1.2s ease-in-out infinite;
+	clip-path: polygon(50% 92%, 20% 66%, 8% 48%, 8% 30%, 20% 18%, 34% 18%, 50% 34%, 66% 18%, 80% 18%, 92% 30%, 92% 48%, 80% 66%);
+}
+
+.coracao::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.58) 
+    0 10%, transparent 28%), linear-gradient(145deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0));
+	clip-path: inherit;
+	pointer-events: none;
+}
+
+.sombra {
+	position: absolute;
+	bottom: clamp(16px, 4vh, 30px);
+	width: min(66vw, 390px);
+	height: 22px;
+	border-radius: 50%;
+	background: rgba(129, 63, 113, 0.28);
+	filter: blur(12px);
+	animation: shadow 2.6s ease-in-out infinite;
+}
+
+.legenda {
+	margin: 0;
+	color: #8a0a7a;
+	font-size: clamp(1.5rem, 3.2vw, 2rem);
+	font-weight: 700;
+	text-align: center;
+	line-height: 1.2;
+	padding-top: 6px;
+}
+
+@keyframes pulseHeart {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+
+	25% {
+		transform: scale(1.05);
+	}
+
+	45% {
+		transform: scale(0.98);
+	}
+
+	65% {
+		transform: scale(1.08);
+	}
+}
+
+@keyframes shadow {
+	0%,
+	100% {
+		transform: scaleX(1);
+		opacity: 0.45;
+	}
+
+	50% {
+		transform: scaleX(0.9);
+		opacity: 0.28;
+	}
+}
+
+@media (max-width: 520px) {
+	.cena {
+		padding: 8px 10px 16px;
+	}
+
+	.palco {
+		height: 320px;
+	}
+
+	.coracao {
+		width: 78vw;
+		height: 78vw;
+	}
+
+	.sombra {
+		width: 70vw;
+		bottom: 22px;
+	}
+
+	.titulo {
+		font-size: clamp(2rem, 9vw, 3rem);
+	}
+
+	.legenda {
+		font-size: clamp(1.25rem, 5vw, 1.6rem);
+	}
+}

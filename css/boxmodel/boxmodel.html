@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #e0e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            width: 400px;
+            height: 400px;
+            background: #003d7a;
+            border: 20px solid #0066ff;
+            padding: 40px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            color: #ff0000;
+            font-size: 40px;
+            margin: 0 0 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .flor {
+            font-size: 100px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            right: -15px;
+            height: 20px;
+            background: radial-gradient(circle, #dbdcde 8px, transparent 8px);
+            background-size: 50px 20px;
+            background-repeat: repeat-x;
+            z-index: 10;
+        }
+
+        .box::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: -15px;
+            right: -15px;
+            height: 20px;
+            background: radial-gradient(circle, #e8e9eb 8px, transparent 8px);
+            background-size: 50px 20px;
+            background-repeat: repeat-x;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>TURMA INF9</h1>
+        <div class="flor">🌼</div>
+    </div>
+</body>
+</html>

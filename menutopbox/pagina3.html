@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contato</title>
+    <link rel="stylesheet" href="menu-site.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="topo-bar">
+            <h1>Meu Site de Topbox</h1>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <nav class="menu" aria-label="Menu principal">
+            <ul class="menu-lista">
+                <li><a href="menutopbox.html">Inicio</a></li>
+                <li class="has-submenu">
+                    <details>
+                        <summary>Paginas</summary>
+                        <ul class="submenu">
+                            <li><a href="menutopbox.html">Inicio</a></li>
+                            <li><a href="pagina2.html">Projetos</a></li>
+                            <li><a href="pagina3.html">Contato</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="pagina2.html">Projetos</a></li>
+                <li><a class="ativo" href="pagina3.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="card">
+            <h2>Contato</h2>
+            <p>Voce pode entrar em contato pelos canais abaixo:</p>
+            <ul>
+                <li>Email: leandro-6013829@estudante.rs.gov.br</li>
+                <li>Telefone: (51) 984538610</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
