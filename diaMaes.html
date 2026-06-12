@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Feliz dia das Mães</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d9a8c4;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+
+  .card {
+    background: #e6b9d6;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+  }
+
+  h1 {
+    color: #7a1f5c;
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  h2 {
+    color: #9c2a7a;
+    margin-top: 10px;
+  }
+
+  .heart {
+    width: 250px;
+    height: 250px;
+    margin: 40px auto;
+    background: radial-gradient(circle at 30% 30%, #ff9ec7, #ff5fa2);
+    clip-path: path("M125,225 C20,150 0,90 0,55 C0,20 30,0 60,0 C90,0 115,20 125,45 C135,20 160,0 190,0 C220,0 250,20 250,55 C250,90 230,150 125,225 Z");
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Feliz dia das Mães</h1>
+    <h2>Eu amo minha mãe!</h2>
+
+    <div class="heart"></div>
+  </div>
+
+</body>
+</html>
